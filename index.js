@@ -4,7 +4,8 @@ var assign = require('object-assign');
 var Frame = React.createClass({
   propTypes: {
     style: React.PropTypes.object,
-    head:  React.PropTypes.node
+    head:  React.PropTypes.node,
+    seamless: React.PropTypes.bool
   },
   render: function() {
     // The iframe isn't ready so we drop children from props here. #12, #17
